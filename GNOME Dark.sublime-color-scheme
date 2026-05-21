@@ -3,7 +3,7 @@
   "author": "",
   "globals": {
         "foreground": "#c2c2c2",
-        "background": "#242424",
+        "background": "#1d1d20",
         "accent": "#61afef",
         "caret": "#c2c2c2",
         "line_highlight": "#353535",
@@ -11,7 +11,7 @@
         "selection_border": "transparent",
         "inactive_selection": "#253a4e",
         "misspelling": "#c678dd",
-        "shadow": "transparent",
+        "shadow": "#000000C0",
         "active_guide": "#3584e4",
         "stack_guide": "color(#3584e4 alpha(0.5))",
         "highlight": "#3584e4",

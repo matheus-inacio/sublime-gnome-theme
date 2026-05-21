@@ -21,6 +21,17 @@
     "rules":
     [
         // ============================================================
+        // ! Title Bar
+        // ============================================================
+
+        {
+            "class": "title_bar",
+            "bg": "#2e2e32",
+            "fg": "#ffffff",
+            "style": "dark"
+        },
+
+        // ============================================================
         // ! Labels
         // ============================================================
 
@@ -63,7 +74,7 @@
             "attributes": ["selected"],
             "layer0.inner_margin": [12, 4, 8, 4],
             "layer0.tint": "#303030",
-            "layer0.texture": "GNOME Dark/assets/sidebar/sidebar_selected_bg.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/sidebar/sidebar_selected_bg.png",
             "layer0.opacity": 1
         },
         {
@@ -71,7 +82,7 @@
             "attributes": ["hover"],
             "layer0.inner_margin": [12, 4, 8, 4],
             "layer0.tint": "#2c2c2c",
-            "layer0.texture": "GNOME Dark/assets/sidebar/sidebar_selected_bg.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/sidebar/sidebar_selected_bg.png",
             "layer0.opacity": 1
         },
         {
@@ -106,7 +117,7 @@
             "content_margin": [8, 6],
             "layer0.inner_margin": 0,
             "layer0.tint": "#6e6e6e",
-            "layer0.texture": "GNOME Dark/assets/sidebar/sidebar_close_icon.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/sidebar/sidebar_close_icon.png",
             "layer0.opacity": 1
         },
         {
@@ -117,7 +128,7 @@
         {
             "class": "close_button",
             "attributes": ["dirty"],
-            "layer0.texture": "GNOME Dark/assets/sidebar/sidebar_dirty_icon.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/sidebar/sidebar_dirty_icon.png",
             "layer0.opacity": 1,
             "layer0.tint": "#6e6e6e"
         },
@@ -125,18 +136,18 @@
             "class": "close_button",
             "attributes": ["dirty", "hover"],
             "layer0.tint": "#ffffff",
-            "layer0.texture": "GNOME Dark/assets/sidebar/sidebar_close_icon.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/sidebar/sidebar_close_icon.png",
         },
         {
             // buttons - disclosure button control
             "class": "disclosure_button_control",
             "content_margin": 8,
             "layer0.inner_margin": 0,
-            "layer0.texture": "GNOME Dark/assets/arrows/arrow_folder_right.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/arrows/arrow_folder_right.png",
             "layer0.tint": "#6e6e6e",
             "layer0.opacity": 1,
             "layer1.inner_margin": 0,
-            "layer1.texture": "GNOME Dark/assets/arrows/arrow_folder_right.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/arrows/arrow_folder_right.png",
             "layer1.opacity": 0
         },
         {
@@ -148,8 +159,8 @@
         {
             "class": "disclosure_button_control",
             "attributes": ["expanded"],
-            "layer0.texture": "GNOME Dark/assets/arrows/arrow_folder_down.png",
-            "layer1.texture": "GNOME Dark/assets/arrows/arrow_folder_down.png"
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/arrows/arrow_folder_down.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/arrows/arrow_folder_down.png"
         },
         {
             // side bar - icon folders
@@ -190,13 +201,12 @@
             "content_margin": [-1, 0, -1, 0],
             "layer0.inner_margin": 0,
             "layer0.tint": "#4b4b4b",
-            "layer0.opacity": 1,
+            "layer0.opacity": 0,
             "layer1.inner_margin": 0,
-            "layer1.texture": "GNOME Dark/assets/tabs/tabset_bg.png",
-            "layer1.tint": "#242424",
+            "layer1.texture": "",
+            "layer1.tint": "#2e2e32",
             "layer1.opacity": 1,
             "tab_overlap": 1,
-            "tab_width": 4194304,
             "tab_min_width": 160,
             "tab_height": 36,
             "mouse_wheel_switch": false
@@ -210,10 +220,10 @@
             "hit_test_level": 0,
             "layer0.inner_margin": 0,
             "layer0.tint": "#4b4b4b",
-            "layer0.opacity": 1,
-            "layer1.inner_margin": [4, 2],
-            "layer1.tint": "#242424",
-            "layer1.texture": "GNOME Dark/assets/tabs/tab_inactive.png",
+            "layer0.opacity": 0,
+            "layer1.inner_margin": [10, 10, 10, 10],
+            "layer1.tint": "#2e2e32",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs/tab_pill.png",
             "layer1.opacity": 1,
             "layer2.opacity": 0
         },
@@ -222,16 +232,18 @@
             "class": "tab_control",
             "attributes": ["selected"],
             "layer0.tint": "#4b4b4b",
+            "layer0.opacity": 0,
             "layer1.opacity": 0,
-            "layer2.inner_margin": [4, 2],
-            "layer2.texture": "GNOME Dark/assets/tabs/tab_active.png",
+            "layer2.inner_margin": [10, 10, 10, 10],
+            "layer2.tint": "#434347",
+            "layer2.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs/tab_pill.png",
             "layer2.opacity": 1
         },
         {
             // tab hover
             "class": "tab_control",
             "attributes": ["hover"],
-            "layer1.tint": "#2c2c2c",
+            "layer1.tint": "#3d3d40",
             "layer1.opacity": 1
         },
         {
@@ -253,17 +265,24 @@
             "content_margin": [10, 10, 10, 10],
             "layer0.inner_margin": 0,
             "layer0.tint": "#545454",
-            "layer0.texture": "GNOME Dark/assets/tabs/tab_close_icon_bg.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs/tab_close_icon_bg.png",
             "layer0.opacity": 0,
             "layer1.tint": "#6e6e6e",
-            "layer1.texture": "GNOME Dark/assets/tabs/tab_close_icon.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs/tab_close_icon.png",
             "layer1.opacity": 1
+        },
+        {
+            "class": "tab_close_button",
+            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+            "layer1.opacity": 1,
+            "layer1.tint": "#ffffff"
         },
         {
             // tab close button hover
             "class": "tab_close_button",
             "attributes": ["hover"],
             "layer0.opacity": 1,
+            "layer1.opacity": 1,
             "layer1.tint": "#ffffff"
         },
         {
@@ -271,7 +290,7 @@
             "class": "tab_close_button",
             "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
             "layer1.tint": "#6e6e6e",
-            "layer1.texture": "GNOME Dark/assets/tabs/tab_dirty_icon.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs/tab_dirty_icon.png",
             "layer1.opacity": 1
         },
         {
@@ -282,26 +301,63 @@
             "layer0.tint": "#545454",
             "layer0.opacity": 1,
             "layer1.tint": "#ffffff",
-            "layer1.texture": "GNOME Dark/assets/tabs/tab_close_icon.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs/tab_close_icon.png",
         },
         {
             // new tab button
             "class": "new_tab_button",
-            "content_margin": 0
+            "content_margin": [18, 12],
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs_buttons/new_tab.png",
+            "layer0.opacity": 1,
+            "layer0.tint": "#6e6e6e"
+        },
+        {
+            "class": "new_tab_button",
+            "attributes": ["hover"],
+            "layer0.opacity": 1,
+            "layer0.tint": "#ffffff"
         },
         {
             // tabs - set scroll left / scroll right
             "class": "scroll_tabs_left_button",
-            "content_margin": 0
+            "content_margin": [18, 12],
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs_buttons/tab_scroll_left.png",
+            "layer0.opacity": 1,
+            "layer0.tint": "#6e6e6e"
+        },
+        {
+            "class": "scroll_tabs_left_button",
+            "attributes": ["hover"],
+            "layer0.opacity": 1,
+            "layer0.tint": "#ffffff"
         },
         {
             "class": "scroll_tabs_right_button",
-            "content_margin": 0
+            "content_margin": [18, 12],
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs_buttons/tab_scroll_right.png",
+            "layer0.opacity": 1,
+            "layer0.tint": "#6e6e6e"
+        },
+        {
+            "class": "scroll_tabs_right_button",
+            "attributes": ["hover"],
+            "layer0.opacity": 1,
+            "layer0.tint": "#ffffff"
         },
         {
             "class": "show_tabs_dropdown_button",
-            "content_margin": 0
+            "content_margin": [18, 12],
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/tabs_buttons/tab_dropdown.png",
+            "layer0.opacity": 1,
+            "layer0.tint": "#6e6e6e"
         },
+        {
+            "class": "show_tabs_dropdown_button",
+            "attributes": ["hover"],
+            "layer0.opacity": 1,
+            "layer0.tint": "#ffffff"
+        },
+
 
         // ============================================================
         // ! Quick Panel
@@ -312,15 +368,15 @@
             "content_margin": [24, 35, 24, 24],
             "layer0.inner_margin": [29, 35, 29, 29],
             "layer0.tint": [0, 0, 0],
-            "layer0.texture": "GNOME Dark/assets/panels/overlay_shadow.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/overlay_shadow.png",
             "layer0.opacity": 0.15,
             "layer1.inner_margin": [29, 35, 29, 29],
             "layer1.tint": "#242424",
-            "layer1.texture": "GNOME Dark/assets/panels/overlay_border.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/overlay_border.png",
             "layer1.opacity": 0.3,
             "layer2.inner_margin": [29, 35, 29, 29],
             "layer2.tint": "#242424",
-            "layer2.texture": "GNOME Dark/assets/panels/overlay_bg.png",
+            "layer2.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/overlay_bg.png",
             "layer2.opacity": 1
         },
         {
@@ -342,7 +398,7 @@
             "layer0.opacity": 1,
             "layer1.inner_margin": 6,
             "layer1.tint": "#242424",
-            "layer1.texture": "GNOME Dark/assets/panels/control_overlay_selected.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/control_overlay_selected.png",
             "layer1.opacity": 0
         },
         {
@@ -395,7 +451,7 @@
             "class": "mini_quick_panel_row",
             "layer0.inner_margin": 6,
             "layer0.tint": "#242424",
-            "layer0.texture": "GNOME Dark/assets/panels/control_overlay_selected.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/control_overlay_selected.png",
             "layer0.opacity": 0
         },
         {
@@ -412,8 +468,12 @@
         // ! Views - grid layout control
         {
             "class": "grid_layout_control",
-            "border_size": 1,
+            "border_size": 0,
             "border_color": "#4b4b4b"
+        },
+        {
+            "class": "tab_connector",
+            "layer0.opacity": 0
         },
 
         // ! Views - minimap control
@@ -432,13 +492,13 @@
             "class": "fold_button_control",
             "content_margin": 8,
             "layer0.inner_margin": 0,
-            "layer0.texture": "GNOME Dark/assets/arrows/arrow_fold_code_right.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/arrows/arrow_fold_code_right.png",
             "layer0.opacity": 1
         },
         {
             "class": "fold_button_control",
             "attributes": ["expanded"],
-            "layer0.texture": "GNOME Dark/assets/arrows/arrow_fold_code_down.png"
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/arrows/arrow_fold_code_down.png"
         },
 
         // ! Views - popup control
@@ -496,7 +556,7 @@
             "layer0.opacity": 1,
             "layer1.inner_margin": [0, 1, 0, 0],
             "layer1.tint": "#1e1e1e",
-            "layer1.texture": "GNOME Dark/assets/panels/status_bar.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/status_bar.png",
             "layer1.opacity": 1
         },
         {
@@ -511,7 +571,7 @@
             "content_margin": [8, 6],
             "layer0.inner_margin": 0,
             "layer0.tint": "#6e6e6e",
-            "layer0.texture": "GNOME Dark/assets/panels/panel_close_icon.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/panel_close_icon.png",
             "layer0.opacity": 1
         },
         {
@@ -532,7 +592,7 @@
             "layer0.opacity": 1,
             "layer1.inner_margin": [0, 1, 0, 0],
             "layer1.tint": "#1e1e1e",
-            "layer1.texture": "GNOME Dark/assets/panels/status_bar.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/status_bar.png",
             "layer1.opacity": 1
         },
         {
@@ -540,14 +600,14 @@
             "class": "panel_button_control",
             "content_margin": [8, 16],
             "layer0.tint": "#ffffff",
-            "layer0.texture": "GNOME Dark/assets/button_icons/panels.png"
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/panels.png"
         },
         {
             // search panel - sidebar button control
             "class": "sidebar_button_control",
             "content_margin": [8, 16],
             "layer0.tint": "#ffffff",
-            "layer0.texture": "GNOME Dark/assets/button_icons/sidebar.png"
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/sidebar.png"
         },
         {
             "class": "label_control",
@@ -635,7 +695,7 @@
             "layer0.opacity": 1,
             "layer1.inner_margin": [1, 0, 0, 0],
             "layer1.tint": "#242424",
-            "layer1.texture": "GNOME Dark/assets/scroll_bar/scroll_bar_bg_vertical.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_bar_bg_vertical.png",
             "layer1.opacity": 1
         },
         {
@@ -647,7 +707,7 @@
             "layer1.opacity": 0,
             "layer2.inner_margin": [0, 8],
             "layer2.tint": "#242424",
-            "layer2.texture": "GNOME Dark/assets/scroll_bar/scroll_thumb_vertical_bg.png",
+            "layer2.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_thumb_vertical_bg.png",
             "layer2.opacity": 1
         },
         {
@@ -658,7 +718,7 @@
             "layer1.opacity": 0,
             "layer2.inner_margin": [0, 8],
             "layer2.tint": "#242424",
-            "layer2.texture": "GNOME Dark/assets/scroll_bar/scroll_thumb_vertical_bg.png",
+            "layer2.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_thumb_vertical_bg.png",
             "layer2.opacity": 1
         },
         {
@@ -669,7 +729,7 @@
             "layer1.opacity": 0,
             "layer2.inner_margin": [0, 8],
             "layer2.tint": "#242424",
-            "layer2.texture": "GNOME Dark/assets/scroll_bar/scroll_thumb_vertical_bg.png",
+            "layer2.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_thumb_vertical_bg.png",
             "layer2.opacity": 1
         },
         {
@@ -677,7 +737,7 @@
             "class": "scroll_track_control",
             "attributes": ["horizontal"],
             "layer1.inner_margin": [0, 1, 0, 0],
-            "layer1.texture": "GNOME Dark/assets/scroll_bar/scroll_bar_bg_horizontal.png"
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_bar_bg_horizontal.png"
         },
         {
             // scroll corner control
@@ -688,7 +748,7 @@
             "layer0.opacity": 1,
             "layer1.inner_margin": [1, 1, 0, 0],
             "layer1.tint": "#242424",
-            "layer1.texture": "GNOME Dark/assets/scroll_bar/scroll_bar_bg_corner.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_bar_bg_corner.png",
             "layer1.opacity": 1
         },
         {
@@ -697,7 +757,7 @@
             "content_margin": [8, 12],
             "layer0.inner_margin": [0, 8],
             "layer0.tint": "#787878",
-            "layer0.texture": "GNOME Dark/assets/scroll_bar/scroll_thumb_vertical.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_thumb_vertical.png",
             "layer0.opacity": 1
         },
         {
@@ -706,7 +766,7 @@
             "attributes": ["horizontal"],
             "content_margin": [12, 8],
             "layer0.inner_margin": [8, 0],
-            "layer0.texture": "GNOME Dark/assets/scroll_bar/scroll_thumb_horizontal.png"
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/scroll_bar/scroll_thumb_horizontal.png"
         },
         {
             "class": "puck_control",
@@ -723,12 +783,12 @@
             "class": "text_line_control",
             "content_margin": [4, 7, 15, 3],
             "layer0.inner_margin": 6,
-            "layer0.tint": "#242424",
-            "layer0.texture": "GNOME Dark/assets/panels/input_shadow.png",
+            "layer0.tint": "#1d1d20",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/input_shadow.png",
             "layer0.opacity": 0.5,
             "layer1.inner_margin": 6,
-            "layer1.tint": "#242424",
-            "layer1.texture": "GNOME Dark/assets/panels/input.png",
+            "layer1.tint": "#1d1d20",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/panels/input.png",
             "layer1.opacity": 1,
         },
         {
@@ -752,7 +812,7 @@
             "class": "dropdown_button_control",
             "content_margin": [8, 9],
             "layer0.inner_margin": [4, 4],
-            "layer0.texture": "GNOME Dark/assets/arrows/dropdown_arrow.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/arrows/dropdown_arrow.png",
             "layer0.opacity": 0.5
         },
 
@@ -767,11 +827,11 @@
             "content_margin": [6, 8, 6, 9],
             "layer0.inner_margin": 6,
             "layer0.tint": "#444444",
-            "layer0.texture": "GNOME Dark/assets/buttons/button_full_shadow.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_full_shadow.png",
             "layer0.opacity": 0,
             "layer1.inner_margin": 6,
             "layer1.tint": "#444444",
-            "layer1.texture": "GNOME Dark/assets/buttons/button_full.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_full.png",
             "layer1.opacity": 1
         },
         {
@@ -800,8 +860,8 @@
             // left button
             "class": "icon_button_control",
             "attributes": ["left"],
-            "layer0.texture": "GNOME Dark/assets/buttons/button_left_shadow.png",
-            "layer1.texture": "GNOME Dark/assets/buttons/button_left.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_left_shadow.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_left.png",
         },
         {
             // left button hover
@@ -819,8 +879,8 @@
             // right button
             "class": "icon_button_control",
             "attributes": ["right"],
-            "layer0.texture": "GNOME Dark/assets/buttons/button_right_shadow.png",
-            "layer1.texture": "GNOME Dark/assets/buttons/button_right.png"
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_right_shadow.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_right.png"
         },
         {
             // right button hover
@@ -832,8 +892,8 @@
             // mini button
             "class": "icon_button_control",
             "attributes": ["left", "right"],
-            "layer0.texture": "GNOME Dark/assets/buttons/button_mini_shadow.png",
-            "layer1.texture": "GNOME Dark/assets/buttons/button_mini.png"
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_mini_shadow.png",
+            "layer1.texture": "sublime-gnome-theme/GNOME Dark/assets/buttons/button_mini.png"
         },
         {
             // mini button
@@ -845,7 +905,7 @@
             // buttons - icon regex
             "class": "icon_regex",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_regex.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_regex.png",
             "layer0.opacity": 1
         },
         {
@@ -857,7 +917,7 @@
             // buttons - icon case
             "class": "icon_case",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_case.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_case.png",
             "layer0.opacity": 1
         },
         {
@@ -869,7 +929,7 @@
             // buttons- icon whole word
             "class": "icon_whole_word",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_wholeword.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_wholeword.png",
             "layer0.opacity": 1
         },
         {
@@ -881,7 +941,7 @@
             // buttons - icon wrap
             "class": "icon_wrap",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_wrap.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_wrap.png",
             "layer0.opacity": 1
         },
         {
@@ -893,7 +953,7 @@
             // buttons - icon in selection
             "class": "icon_in_selection",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_inselection.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_inselection.png",
             "layer0.opacity": 1
         },
         {
@@ -905,7 +965,7 @@
             // buttons - icon highlight
             "class": "icon_highlight",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_highlight.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_highlight.png",
             "layer0.opacity": 1
         },
         {
@@ -917,7 +977,7 @@
             // buttons - icon preserve case
             "class": "icon_preserve_case",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_preserve_case.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_preserve_case.png",
             "layer0.opacity": 1
         },
         {
@@ -929,7 +989,7 @@
             // buttons - icon context
             "class": "icon_context",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_context.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_context.png",
             "layer0.opacity": 1
         },
         {
@@ -941,7 +1001,7 @@
             // buttons - icon use buffer
             "class": "icon_use_buffer",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_usebuffer.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_usebuffer.png",
             "layer0.opacity": 1
         },
         {
@@ -953,7 +1013,7 @@
             // buttons - icon gitignore
             "class": "icon_use_gitignore",
             "content_margin": 8,
-            "layer0.texture": "GNOME Dark/assets/button_icons/find_gitignore.png",
+            "layer0.texture": "sublime-gnome-theme/GNOME Dark/assets/button_icons/find_gitignore.png",
             "layer0.tint": "#ffffff",
             "layer0.opacity": 1
         },
